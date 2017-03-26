@@ -1,0 +1,1 @@
+let checks  = quilt 0.4 [(x+1)/2, (y+1)/2, 0.5] [(x+1)/2, (y+1)/2, 0.5] 0.4 in let checks2 = quilt checks checks checks 0.4 in let checks3 = quilt checks2 checks2 checks2 0.4 in let checks4 = quilt checks3 checks3 checks3 0.4 in let checks5 = quilt checks4 checks4 checks4 0.4 in checks5

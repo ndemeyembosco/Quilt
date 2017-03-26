@@ -1,0 +1,15 @@
+int max;
+input max;
+int n; int b; int m; int r;
+n := 2;
+while (n < max) {
+  b := 1;
+  m := 2;
+  while (m < n) {
+    r := n - m * (n / m);
+    if (r == 0) then b := 0 else b := b;
+    m += 1
+  };
+  if b == 1 then output n else b := b;
+  n += 1
+}

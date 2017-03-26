@@ -1,0 +1,100 @@
+:save tile.png
+let checks  = quilt 0.4 [(x+1)/2, (y+1)/2, 0.5] [(x+1)/2, (y+1)/2, 0.5] 0.4 in let checks2 = quilt checks checks checks 0.4 in let checks3 = quilt checks2 checks2 checks2 0.4 in let checks4 = quilt checks3 checks3 checks3 0.4 in let checks5 = quilt checks4 checks4 checks4 0.4 in checks5
+let checks  = quilt (red + blue) [(x+1)/2, (y+1)/2, 0.5] [(x+1)/2, (y+1)/2, 0.5] (red + blue) in let checks2 = quilt checks checks checks (red + blue) in let checks3 = quilt checks2 checks2 checks2 (red + blue) in let checks4 = quilt checks3 checks3 checks3 (red + blue) in let checks5 = quilt checks4 checks4 checks4 (red + blue) in checks5
+:save beauty.png
+let swirl = (let grate = -cos (x*20*pi)/2 + 0.5 in grate rot (20*(sin(50*sqrt(x*x + y*y))))) in  swirl * purple + (y+1)/2 * blue
+let swirl = (let grate = -cos (x*20*pi)/2 + 0.5 in grate rot (20*(sin(50*sqrt(x*x + y*y))))) in  swirl * purple + (y+1)/2 * green
+let swirl = (let grate = -cos (x*20*pi)/2 + 0.5 in grate rot (20*(sin(50*sqrt(x*x + y*y))))) in  swirl * white + (y+1)/2 * green
+let swirl = (let grate = -cos (x*20*pi)/2 + 0.5 in grate rot (20*(sin(50*sqrt(x*x + y*y))))) in  swirl * yellow + (y+1)/2 * green
+let swirl = (let grate = -cos (x*20*pi)/2 + 0.5 in grate @ (20*(sin(50*sqrt(x*x + y*y))))) in  swirl * yellow + (y+1)/2 * green
+:insts
+:help
+:res_words
+:insts
+:help
+:info x
+:info x
+:info "if"
+:info x
+:info true
+:info inc_color
+:info inc_color
+:inf inc_color
+:inc_color
+:res_words
+:insts
+:help
+:q
+:res_words
+:insts
+:help
+:q
+:r
+:insts
+:help
+:q
+:insts
+:help
+:q
+:insts
+:help
+:q
+:r
+:insts
+:help
+:q
+:insts
+:help
+:q
+:insts
+:help
+:q
+:help
+:q
+:insts
+:help
+:info inc_color
+:res_words
+:q
+:res_words
+:q
+let checks  = quilt yellow orange orange yellow in let checks2 = quilt checks checks checks yellow in let checks3 = quilt checks2 checks2 checks2 yellow in let checks4 = quilt checks3 checks3 checks3 yellow in let checks5 = quilt checks4 checks4 checks4 yellow in checks5
+quilt hsl([90.0/360.0, 0.0, 0.25]) [90.0/360.0, 0.0, 0.25] inc_color([90.0/360.0, 0.0, 0.25]) rot 0.5 hsl([90.0/360.0, 0.05, 0.25])
+rot 40 quilt hsl([90.0/360.0, 0.0, 0.25]) [90.0/360.0, 0.0, 0.25] inc_color([90.0/360.0, 0.0, 0.25]) hsl([90.0/360.0, 0.05, 0.25])
+quilt hsl([90.0/360.0, 0.0, 0.25]) [90.0/360.0, 0.0, 0.25] inc_color([90.0/360.0, 0.0, 0.25]) hsl([90.0/360.0, 0.05, 0.25]) rot 0.6
+quilt hsl([90.0/360.0, 0.0, 0.25]) [90.0/360.0, 0.0, 0.25] inc_color([90.0/360.0, 0.0, 0.25]) hsl([90.0/360.0, 0.05, 0.25])
+hsl([90.0/360.0, 0.0, 0.25])
+hsl([1.0, 0.0, 0.25])
+hsl([1.0, 0.0, 0.0])
+hsl([0.0, 1.0, 0.0])
+hsl([0.0, 0.0, 0.0])
+hsl([0.3, 0.0, 0.0])
+hsl([0.3, 0.04, 0.0])
+hsl([0.08, 0.04, 0.0])
+hsl([0.08, 0.004, 0.0])
+hsl([0.08, 0.004, 0.04])
+hsl([0.05, 0.004, 0.04])
+hsl([0.7, 0.004, 0.04])
+hsl([0.6, 0.004, 0.04])
+hsl([0.6, 0.4, 0.04])
+hsl([0.6, 0.04, 0.04])
+hsl([0.6, 0.04, 0.40])
+hsl([0.6, 0.04, 0.0])
+hsl([0.6, 0.04, 0.1])
+hsl([0.6, 0.04, 0.05])
+hsl([0.5, 0.04, 0.05])
+hsl([1, 0.04, 0.05])
+hsl([90, 0.04, 0.05])
+hsl([290, 0.04, 0.05])
+hsl([290, 0.4, 0.05])
+hsl([290, 0.4, 0.5])
+inc_color(it)
+inc_color([0.000000000002, 0.000005, 0.06])
+[0.000000000002, 0.000005, 0.06]
+hsl([0.000000000002, 0.000005, 0.06])
+hsl([0.000000000002, 0.000000000005, 0.06])
+hsl([0.000000000002, 0.000000000005, 0.006])
+hsl([0.000000000002, 0.000000000005, 0.0000006])
+hsl([0.000000000002, 0.000000000005, 0.76])
+hsl([0.2, 0.000000000005, 0.76])
+hsl([0.2, 0.000005, 0.76])
